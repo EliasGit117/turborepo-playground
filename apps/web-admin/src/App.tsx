@@ -4,7 +4,7 @@ import { Button } from '@repo/ui/button';
 function App() {
 
   return (
-    <main>
+    <main className="container mx-auto py-4">
 
       <Button appName="admin">
         Click me!

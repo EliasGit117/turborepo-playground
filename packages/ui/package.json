@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./globals.css": "./src/globals.css",
+    "./postcss.config": "./postcss.config.js",
+    "./tailwind.config": "./tailwind.config.ts",
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx"
@@ -17,6 +20,9 @@
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "react": "^18.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17"
   }
 }

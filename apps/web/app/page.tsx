@@ -6,7 +6,7 @@ import { Button } from "@repo/ui/button";
 
 export default function Page() {
   return (
-    <main>
+    <main className="container mx-auto py-4">
 
       <Button appName="web">
         Click me!
