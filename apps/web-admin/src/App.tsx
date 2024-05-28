@@ -1,12 +1,11 @@
-import { Button } from '@repo/ui/button';
-
+import { Button } from '@ui/components/ui/button.tsx';
 
 function App() {
 
   return (
     <main className="container mx-auto py-4">
 
-      <Button appName="admin">
+      <Button>
         Click me!
       </Button>
 

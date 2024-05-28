@@ -5,6 +5,11 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
 
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../../packages/ui/src/*"]
+    },
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
