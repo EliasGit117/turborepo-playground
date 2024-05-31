@@ -1,17 +1,20 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [{
-      find: '@ui',
-      replacement: path.resolve(__dirname, '../../packages/ui/src')
-    }]
+    alias: [
+      {
+        find: "@ui",
+        replacement: path.resolve(__dirname, "../../packages/ui/src"),
+      },
+    ],
   },
-  build: {
-    sourcemap: true
-  }
-});
+})

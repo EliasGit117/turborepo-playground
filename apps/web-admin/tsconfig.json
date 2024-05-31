@@ -1,20 +1,22 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
-  "display": "Admin App",
   "compilerOptions": {
+    "target": "ES2020",
     "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-
+    "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["../../packages/ui/src/*"],
+      "@ui/*": ["../../packages/ui/src/*"]
     },
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "noEmit": true,
-
+    "jsx": "react-jsx",
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
